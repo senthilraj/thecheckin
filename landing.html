@@ -1,0 +1,133 @@
+<html lang="en">
+    <head>
+        <title>TheCheckIn | QR attedance tracking application for android, ios and web support</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style-landing.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-section">
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.png" alt="TheCheckIn Logo"/></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="https://web.thecheckin.io/Login" target="_blank">Login</a>
+                            </li>
+                            <li>
+                                <a href="https://web.thecheckin.io/Signup" target="_blank" class="button button-primary">Try for Free</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <div class="container">
+                <div class="main-content">
+                    <div class="left-content">
+                        <h1>Simplify Attendance & Time Tracking</h1>
+                        <p>The Mobile first QR attendance management software helps to time tracking employees in easy way for small bussiness to enterprise.</p>
+                        <br/>
+                        <div class="button-container">
+                            <a href="https://web.thecheckin.io/Signup" target="_blank" class="button button-primary">Start Tracking for Free</a>
+                            <button type="button" onclick="openPopup()" class="button button-default"><i class="bi bi-play-fill"></i>Watch Video Demo</button>
+                        </div>
+
+                    </div>
+                    <div class="right-content">
+                        <div class="app-visual">
+                            <img src="./images/TheCheckIn-Attendance-Tracking-Types.jpg" width="100%"  alt="TheCheckIn Attendance Tracking Types"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="container">
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Multiple Branch Support</h2>
+                    <p>Manage Attendance Across Multiple Locations: With TheCheckIn, you can easily track attendance for all your branches in one place. This makes it simple to oversee operations and keep everything organized.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Role Management Made Simple</h2>
+                    <p>Assign roles and permissions effortlessly for smooth operations.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Customizable Shifts</h2>
+                    <p>Tailor shifts to fit your organization's unique schedule.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Accessible Anywhere</h2>
+                    <p>Use it on Android, iOS, and web platforms for seamless integration.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Customizable Timesheets</h2>
+                    <p>Create and personalize timesheets to match your business needs.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Prevent Fraud</h2>
+                    <p>Verify locations to prevent fraudulent check-ins.</p>
+                </div>
+                <div class="features-content">
+                    <img src="" alt=""/>
+                    <h2>Versatile Time Tracking</h2>
+                    <p>Use various methods to track time that suits your workflow.</p>
+                </div>
+            </div>
+        </section>
+        <div class="popup-container" id="popupContainer" onclick="closeOnClick(event)">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <!-- Embedded YouTube video -->
+                <iframe id="youtubeVideo" width="100%" height="450" src="https://www.youtube.com/embed/x-yia1cbJxI?si=Y6o67ClAC0_FTW30"
+                 title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script>
+            // Function to open the popup
+            function openPopup() {
+                var popup = document.getElementById("popupContainer");
+                var video = document.getElementById("youtubeVideo");
+                video.src = "https://www.youtube.com/embed/x-yia1cbJxI?si=Y6o67ClAC0_FTW30";
+                popup.style.display = "block";
+            }
+
+            // Function to close the popup
+            function closePopup() {
+                var popup = document.getElementById("popupContainer");
+                var video = document.getElementById("youtubeVideo");
+                video.src = ""; // Set the src attribute to empty to stop the video
+                popup.style.display = "none";
+            }
+
+            // Function to close popup when clicking outside of it
+            function closeOnClick(event) {
+                var popup = document.getElementById("popupContainer");
+                if (event.target == popup) {
+                    closePopup();
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
