@@ -50,6 +50,16 @@ button {
     margin-left: 15px;
 }
 
+.app-links {
+    margin-top:40px;
+    text-align: center;
+}
+
+.app-links a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
 .button-primary:hover {
     background: #1b18b3;
 }
@@ -111,7 +121,7 @@ header {
 }
 
 .main-content h1 {
-    font-size: 58px;    
+    font-size: 56px;    
     margin: 35px 0;
     font-weight: 900;
     line-height: 1.1;
@@ -175,8 +185,7 @@ header {
 }
 
 .feature-section {
-    margin: 30px 0;
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
 .section-second-cta {
@@ -277,4 +286,14 @@ header {
 }
 .toc li {
     margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #767676;
+    color:#FFF;
+}
+
+footer a, footer a:visited {
+    color: #FFF;
 }
